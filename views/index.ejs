@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="users" method="post">
+      First name:<br>
+      <input type="text" name="firstname" placeholder="Input First Name"><br>
+      Last name:<br>
+      <input type="text" name="lastname" placeholder="Input Last Name"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
