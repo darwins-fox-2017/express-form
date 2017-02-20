@@ -1,0 +1,22 @@
+Controller Testing
+
+Berdasarkan hasil eksperimen:
+Get: berisi param untuk diinputkan value-nya
+
+Contoh:
+router.get('/', function(req, res, next) {
+  if(req.query.say === undefined) {
+    res.render('index', { title: 'HACKTIV8 FORM', answer: req.query.say});
+  } else {
+    res.render('index', { title: 'HACKTIV8 FORM', answer: req.query.say, result: req.query.say.toLowerCase()});
+  }
+});
+
+//Running browser:
+Jika ingin testing dari /users, ketikkan:
+http://localhost:3000/users?say=HELLO
+Maka, akan tampil form dan result kata hello (huruf kecil karena disetting .toLowerCase()).
+
+Jika ingin testing dari /, ketikkan:
+http://localhost:3000/?say=HELLO
+Maka, akan tampil form dan result kata hello (huruf kecil karena disetting .toLowerCase()).
