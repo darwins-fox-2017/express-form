@@ -14,7 +14,7 @@ router.get('/create', function(req, res, next){
 })
 
 router.post('/create', function(req, res, next){
-  res.send('Your input is : firstname : ' + req.body.firstname + ' lastname : ' + req.body.lastname)
+  res.send('Your input is : firstname : ' + req.body.firstname.toLowerCase() + ' lastname : ' + req.body.lastname.toLowerCase())
 })
 
 module.exports = router;
