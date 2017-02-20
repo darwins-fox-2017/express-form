@@ -7,13 +7,13 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <form>
+    <form action="/users" method="post">
       <label>
-        Feedback: <input type="text" name="say">
+        Feedback: <input type="text" name="result">
         <input type="submit" value="submit">
     </form>
     <p>
-      <%= result %>
+      <%= answer %>
     </p>
   </body>
 </html>
