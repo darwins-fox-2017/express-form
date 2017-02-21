@@ -6,7 +6,9 @@
   </head>
   <body>
     <h1>Users</h1>
+    <% if (params.say) { %>
     <p>How do you say it ? <%= params.say.toLowerCase() %></p>
+    <% } %>
     <form class="" action="/users" method="get">
       <input type="text" name="say" value="">
       <input type="submit">
